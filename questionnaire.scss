@@ -1,0 +1,192 @@
+/*! Personal codes
+Brand colours:}*/
+ // descriptive brand variables:
+$lightwarmgrey: #726450;
+$darkwarmgrey: #3f3a32;
+$black: #000000;
+$white: #FFFFFF;
+$eggyellow: #ffb81c;
+
+$font-stack: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+$font-stack2: 'Merriweather', Times, serif;
+
+
+@mixin appearance($value) {
+-webkit-appearance:$value;
+            -moz-appearance:$value;
+                 appearance:$value;
+}
+
+@mixin filter($value2) {
+    -webkit-filter: $value2;
+       -moz-filter: $value2;
+            filter: $value2;
+}
+
+
+ h1,h2,h3,h4,h5,h6 {font-family:$font-stack}
+
+.container p, .container ul {font-family:$font-stack2;
+  font-size: 17px;
+  line-height: 29px;
+margin-bottom: 22px;}
+
+
+
+.smalltext  {font-family:$font-stack2;
+font-size: 13px;
+margin-bottom: 22px;}
+
+.textblock {width:100%;
+max-width: 790px;}
+
+.logoholder {
+	width: 200px;
+	height: 37px;
+	background-image: url(images/main-logo-small.png);
+	background-repeat: no-repeat;
+	background-position: 10px top;
+	margin-top: -7px;
+}
+
+
+ .blockbox{
+	 background-color:$black;
+	 padding:8px;
+	 opacity: .9;
+	 border-radius: 10px;
+	 width:100%;
+	 border:$eggyellow 2px solid;
+	 }
+
+   .blockbox2{
+    background-color:$black;
+    padding:8px;
+    opacity: .9;
+    width:100%;
+    max-width: 790px;
+    }
+
+.progressbardecor {
+	margin-top:12px;
+	background-image: url(images/progress.png);
+	background-color: $lightwarmgrey;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	background-repeat: no-repeat;
+	background-position: center center;
+	-webkit-box-shadow: inset 0 8px 8px -8px rgba(0,0,0,0.5);
+    -moz-box-shadow: inset 0 8px 8px -8px (0,0,0,0.5);
+    box-shadow: inset 0 8px 8px -8px rgba(0,0,0,0.5);
+}
+
+.container .footer a {color:$white;}
+.container .footer a:hover {color:$eggyellow;}
+
+
+/*
+Radio Question controls
+ */
+
+
+
+.cc-selector input{
+    margin:0;padding:0;
+            @include appearance(none);
+}
+
+
+
+.hideme{
+    display:none;
+}
+
+/* bg images for buttons */
+.cereal{background-image: url(images/cereal.png);
+}
+.eggtoast{background-image: url(images/egg_toast.png);
+}
+.coffee{background-image: url(images/coffee.png);
+}
+.Coffeecookies{background-image: url(images/Coffee_cookies.png);
+}
+.crispsandpop{background-image: url(images/pop_and_crisps.png);
+}
+.chickendrumbstick{background-image:url(images/chicken_drumbstick.png);}
+
+.apple{background-image: url(images/apple.png);
+}
+.crispsandpop{background-image: url(images/pop_and_crisps.png);
+}
+
+
+/*Simple button */
+.linkboxslim2 {
+	border-radius: 30px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	border: 1px solid $black;
+	background-color: $eggyellow;
+	background-image: url(images/arrows_skip.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	min-height: 60px;
+	width: 220px;
+}
+  .linkboxslim2:hover {
+	background-color:$lightwarmgrey;
+
+  }
+
+
+/*radio button labels
+*/
+.cc-selector input:active +.foodtypes-cc{opacity: .9;}
+.cc-selector input:checked +.foodtypes-cc{
+          @include filter(none);
+}
+
+.foodtypes-cc{
+    cursor:pointer;
+    background-size:contain;
+    background-repeat:no-repeat;
+    display:inline-block;
+    width:200px;height:200px;
+    -webkit-transition: all 100ms ease-in;
+       -moz-transition: all 100ms ease-in;
+            transition: all 100ms ease-in;
+    -webkit-filter: brightness(1.8) grayscale(1) opacity(.3);
+       -moz-filter: brightness(1.8) grayscale(1) opacity(.3);
+            filter: brightness(1.8) grayscale(1) opacity(.3);
+}
+
+
+.foodtypes-cc:hover{
+    -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+       -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
+            filter: brightness(1.2) grayscale(.5) opacity(.9);
+}
+
+/* Extras
+*/
+.spacer10 {height: 10px;}
+.clearboth {clear:both;}
+
+@media screen and (max-width: 768px) {
+
+/* smaller radio button labels to fit smaller screens*/
+
+.flexspacer {height: 60px;}
+
+.foodtypes-cc{
+    width:100px;height:100px;
+	margin-top: -50px;
+}
+
+h1 {
+    font-size: 67%;
+}
+}

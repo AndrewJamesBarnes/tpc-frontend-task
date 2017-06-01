@@ -1,0 +1,166 @@
+/*! Personal codes
+Brand colours:
+light warm grey : 726450
+dark warm grey : 3f3a32
+Blacks in headers and footers : 000000
+Egg yoke Yellow : ffb81c
+ */
+
+ h1,h2,h3,h4,h5,h6 {font-family:'Open Sans','Helvetica Neue',Arial,sans-serif}
+
+
+.logoholder {
+	width: 200px;
+	height: 37px;
+	background-image: url(../images/main-logo-small.png);
+	background-repeat: no-repeat;
+	background-position: 10px top;
+	margin-top: -7px;
+}
+
+.logoholder a:hover {
+	background-position: 10px -35px;
+}
+
+ .blockbox{
+	 background-color:#3f3a32;
+	 padding:8px;
+	 opacity: .9;
+	 border-radius: 10px;
+	 width:100%;
+	 border:#ffb81c 2px solid;
+	 }
+.progressbardecor {
+	margin-top:12px;
+	background-image: url(../images/progress.png);
+	background-color: #726450;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	background-repeat: no-repeat;
+	background-position: center center;
+	-webkit-box-shadow: inset 0 8px 8px -8px rgba(0,0,0,0.5);
+    -moz-box-shadow: inset 0 8px 8px -8px (0,0,0,0.5);
+    box-shadow: inset 0 8px 8px -8px rgba(0,0,0,0.5);
+}
+
+.container .footer a {color:#fff;}
+.container .footer a:hover {color:#ffb81c;}
+
+
+/*
+.display768 {
+	display:none;
+}
+.displayOver768 {
+	display:block;
+}
+
+.nextnextdiv {
+	float: right;
+	width: 10%;
+}
+*/
+/*
+Radio Question controls
+ */
+.cc-selector input{
+    margin:0;padding:0;
+    -webkit-appearance:none;
+       -moz-appearance:none;
+            appearance:none;
+}
+
+.hideme{
+    display:none;
+}
+
+/* bg images for buttons */
+.cereal{background-image: url(../images/cereal.png);
+}
+.eggtoast{background-image: url(../images/egg_toast.png);
+}
+.coffee{background-image: url(../images/coffee.png);
+}
+.Coffeecookies{background-image: url(../images/Coffee_cookies.png);
+}
+.crispsandpop{background-image: url(../images/pop_and_crisps.png);
+}
+.chickendrumbstick{background-image:url(../images/chicken_drumbstick.png);}
+
+.apple{background-image: url(../images/apple.png);
+}
+.crispsandpop{background-image: url(../images/pop_and_crisps.png);
+}
+
+
+/*Simple button */
+.linkboxslim2 {
+	border-radius: 30px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	border: 1px solid #000000;
+	background-color: #ffb81c;
+	background-image: url(../images/arrows_skip.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	min-height: 60px;
+	width: 220px;
+}
+  .linkboxslim2:hover {
+	background-color:#726450;
+
+  }
+
+
+/*radio button labels */
+.cc-selector input:active +.foodtypes-cc{opacity: .9;}
+.cc-selector input:checked +.foodtypes-cc{
+    -webkit-filter: none;
+       -moz-filter: none;
+            filter: none;
+}
+.foodtypes-cc{
+    cursor:pointer;
+    background-size:contain;
+    background-repeat:no-repeat;
+    display:inline-block;
+    width:200px;height:200px;
+    -webkit-transition: all 100ms ease-in;
+       -moz-transition: all 100ms ease-in;
+            transition: all 100ms ease-in;
+    -webkit-filter: brightness(1.8) grayscale(1) opacity(.5);
+       -moz-filter: brightness(1.8) grayscale(1) opacity(.5);
+            filter: brightness(1.8) grayscale(1) opacity(.5);
+}
+.foodtypes-cc:hover{
+    -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+       -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
+            filter: brightness(1.2) grayscale(.5) opacity(.9);
+}
+
+/* Extras
+a:visited{color:#888}
+a{color:#444;text-decoration:none;}
+p{margin-bottom:.3em;}
+*/
+.spacer10 {height: 10px;}
+.clearboth {clear:both;}
+
+@media screen and (max-width: 768px) {
+
+/* smaller radio button labels to fit smaller screens*/
+
+.flexspacer {height: 60px;}
+
+.foodtypes-cc{
+    width:100px;height:100px;
+	margin-top: -50px;
+}
+
+h1 {
+    font-size: 67%;
+}
+}

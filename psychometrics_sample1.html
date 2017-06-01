@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="author" content="andrew barnes">
+<meta name="copyright" content="All content is Copyright 2017">
+<meta name="rating" content="general">
+<meta name="Description" content="Psychometrics">
+<title>Psychometrics | </title>
+
+	<!-- <link rel="shortcut icon" type="images/x-icon" href="favicon.ico"> -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+    <!-- Bootstrap Core CSS code for main page structure and navigation bar -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Non Standard Import Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Modified Bootstarp creative code for theme CSS -->
+    <link href="css/creative.min.css" rel="stylesheet">
+
+    <!-- Dedicated CSS for the questionaire piece -->
+    <link href="questionnaire.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+<!-- simple question div controller script start-->
+<script>
+function showonlyonev2(thechosenone) {
+      var newboxes = document.getElementsByTagName("div");
+      for(var x=0; x<newboxes.length; x++) {
+            name = newboxes[x].getAttribute("class");
+            if (name == 'commentouter') {
+           // if (name == 'newboxes-2') {
+                  if (newboxes[x].id == thechosenone) {
+                        if (newboxes[x].style.display == 'block') {
+                              newboxes[x].style.display = 'none';
+                        }
+                        else {
+                              newboxes[x].style.display = 'block';
+                        }
+                  }else {
+                        newboxes[x].style.display = 'none';
+                  }
+            }
+      }
+}
+</script>
+<!-- simple question div controller script End -->
+
+
+</head>
+
+<body id="page-top">
+
+
+    <nav id="mainNav" style="background:#000;" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="psychometrics_sample1.html"><div class="logoholder"></div></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#">Link 1</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#">Link 2</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#">Link 3</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#">Link 4</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Background flexible style image holder -->
+    <header class="headerimage2">
+        <div class="header-content">
+
+          <!-- Question Box outer holder - START-->
+            <div class="header-content-inner blockbox">
+                <form>
+
+                <!-- Question 1 Box displayed  -->
+                <div class="commentouter" id="newboxes1"  style="display: block;">
+                <h1>Pick a lunch</h1>
+                <div class="flexspacer clearboth"></div>
+    <div class="cc-selector">
+        <input name="lunch" type="radio" id="noanswer1"  class="hideme" value="no answer" checked />
+
+        <input name="lunch" type="radio" id="apple" class="hideme" value="apple" />
+        <label class="foodtypes-cc apple" for="apple"  aria-label="apple - Selection 1 of 3"  ></label>
+        <input id="crispsandpop" type="radio" name="lunch"  class="hideme" value="crispsandpop" />
+        <label class="foodtypes-cc  crispsandpop" for="crispsandpop" aria-label="Crisps and fizzy drink - Selection 2 of 3" ></label>
+        <input id="chickendrumbstick" type="radio" name="lunch" class="hideme" value="chicken drumbstick" />
+        <label class="foodtypes-cc chickendrumbstick" for="chickendrumbstick" aria-label="chicken drumbstick and chips - Selection 3 of 3"></label>
+    </div><div class="clearboth"></div>
+    <a id="myHeader2-2" href="javascript:showonlyonev2('newboxes2');"><span id="next" class="linkboxslim2"></span></a>
+    </div>
+                <!-- Question 1 Box END  -->
+
+                <!-- Question 2 Box hidden  -->
+                <div class="commentouter" id="newboxes2"  style="display: none;">
+                <h1>Pick a breakfast</h1>
+                <div class="flexspacer clearboth"></div>
+    <div class="cc-selector">
+        <input name="breakfast" type="radio" id="noanswer2"  class="hideme" value="no answer"  checked />
+
+        <input name="breakfast" type="radio" id="eggtoast" class="hideme" value="egg and toast" />
+        <label class="foodtypes-cc eggtoast" for="eggtoast"  aria-label="egg_toast - Selection 1 of 3"  ></label>
+        <input name="breakfast"  id="coffee" type="radio" class="hideme" value="take-away coffee" />
+        <label class="foodtypes-cc  coffee" for="coffee" aria-label="take-away coffee - Selection 2 of 3" ></label>
+        <input name="breakfast" id="cereal" type="radio" class="hideme" value="cereal" />
+        <label class="foodtypes-cc cereal" for="cereal" aria-label="cereal - Selection 3 of 3"></label>
+    </div><div class="clearboth"></div>
+    <a id="myHeader2-2" href="javascript:showonlyonev2('newboxes1');" ><span id="next2" class="linkboxslim2"></span></a>
+    </div>
+                <!-- Question 2 Box END  -->
+</form>
+
+  <div>
+  <div class="progress progressbardecor">
+    <div id="progressbar" class="progress-bar progress-bar-warning progress-bar-striped active" style="width: 0%"></div>
+   <!-- <div id="progressbar" class="progress-bar progress-bar-striped active" style="width: 0%"></div>-->
+  </div>
+ <!--  <button id="next">next</button>-->
+</div>
+    </div><div class="clearboth"></div>
+
+          </div>
+        </div>
+    </header>
+<div style="clear:both;"></div>
+
+
+
+
+<!-- Footer Start -->
+
+    <aside class="bg-dark">
+        <div class="container text-center">
+        	<div class="footer">
+                © 2017 <!--<?php $the_year = date("Y"); echo $the_year; ?>--> University of Cambridge
+							<br />
+								<a href="http://www.cam.ac.uk/university-a-z">University A-Z</a>
+							 |
+								<a href="#">Contact the University</a>
+							 |
+								<a href="#">Accessibility</a>
+							 |
+								<a href="#">Freedom of information</a>
+							 |
+								<a href="#">Terms and conditions</a>
+
+            </div>
+        </div>
+    </aside>
+
+<!-- Footer End -->
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript for navigation responsive view and function -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- JS for Progress bar - change the code to make more dynamic -->
+ <script>
+ var totalQuestions = 4;
+ var currentQuestion = 0;
+ var $progressbar = $("#progressbar");
+
+ $("#next").on("click", function(){
+   if (currentQuestion >= totalQuestions){ return; }
+   currentQuestion++;
+   $progressbar.css("width", Math.round(100 * currentQuestion / totalQuestions) + "%");
+   });
+ $("#next2").on("click", function(){
+   if (currentQuestion >= totalQuestions){ return; }
+   currentQuestion++;
+   $progressbar.css("width", Math.round(100 * currentQuestion / totalQuestions) + "%");
+ });
+ </script>
+
+</body>
+
+
+</html>
